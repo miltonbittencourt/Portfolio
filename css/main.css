@@ -222,7 +222,7 @@ header {
 }
 
 #inicio h3 {
-  margin: 20px 0px;
+  margin: 10px 0px;
   text-align: center;
   font-size: 1.2em;
 }
@@ -242,7 +242,7 @@ header {
 #rede-icon {
   color: var(--color-btn);
   font-size: 2.5em;
-  margin: 25px 40px;
+  margin: 25px 30px;
 }
 
 .text {
