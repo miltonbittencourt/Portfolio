@@ -5,10 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Milton Bittencourt</title>
+
     <!-- Link CSS -->
     <link rel="stylesheet" href="css/main.css">
+
     <!-- Link FA -->
     <script src="https://kit.fontawesome.com/fa471138b2.js" crossorigin="anonymous"></script>
+
+    <!-- Link Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Script inicial, para não ocorrer delay no tema salvo -->
     <script>
         const changeThemeToDark = () => {
             document.documentElement.setAttribute("data-theme", "dark")
@@ -44,7 +53,7 @@
 
         <!-- Theme checkbox -->
         <input type="checkbox" name="toggle-dark" id="toggle-dark">
-        <label id="label" for="toggle-dark">
+        <label aria-label="Mudar Tema" id="label" for="toggle-dark" role="checkbox">
             <i class="fa-solid fa-sun"></i>
             <i class="fa-solid fa-moon"></i>
             <div id="ball"></div>
@@ -52,21 +61,25 @@
     </header>
       
 
-    <!-- <section id="inicio">
-        <p>Olá! Meu nome é</p>
-        <h1>Milton Bittencourt</h1>
-        <h2>Sou um estudante com objetivo de me tornar um programador Front-end. </h2>
-        <img src="images/perfil.jpg" alt="Foto de Milton" />
-        <div class="redes">
-            <span>🎮</span>
-            <span>🎮</span>
-            <span>🎮</span>
+    <section id="inicio">
+        <div id="nome">
+            <p class="text">Olá, meu nome é</p>
+            <h1>Milton Bittencourt.</h1>
         </div>
-        <p>
+        <h3>Sou um estudante com objetivo de me tornar um programador Front-end. </h3>
+        <div id="logo">
+            <img src="images/Logo_Média_preview.png" alt="Foto de Milton" />
+        </div>
+        <div class="redes">
+            <a href="https://github.com/miltonbittencourt" target="_blank"><i id="rede-icon" class="fa-brands fa-square-github fa-2xl"></i></a>
+            <a href="https://www.linkedin.com/in/milton-bittencourt-11b1ba167/" target="_blank"><i id="rede-icon" class="fa-brands fa-linkedin fa-2xl"></i></a>
+            <a href="https://www.instagram.com/bittencourt_milton/" target="blank"><i id="rede-icon" class="fa-brands fa-instagram fa-2xl"></i></a>
+        </div>
+        <p class="text">
             Navegue pelo meu site para saber mais sobre minha jornada de aprendizado e os projetos nos quais tenho trabalhado.
         </p>
           
-    </section> -->
+    </section>
 
     <!-- Link JS -->
     <script src="js/main.js"></script>

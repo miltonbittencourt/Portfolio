@@ -17,7 +17,7 @@ margin: 0;
 padding: 0;
 border: 0;
 box-sizing: border-box;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-family: 'Fraunces', serif;
 }
 
 /* Modo Claro */
@@ -51,6 +51,8 @@ a:hover {
   font-size: 1.2em;
 }
 
+/* Header */
+
 header {
   height: 50px;
   padding: 1rem;
@@ -59,6 +61,8 @@ header {
   justify-content: space-between;
   background: var(--background2);
 }
+
+/* Menu */
 
 #menu {
   display: flex;
@@ -75,6 +79,7 @@ header {
   display: none;
 }
 
+/* Menu Mobile */
 
 @media (max-width: 600px) {
 
@@ -197,4 +202,49 @@ header {
   font-size: 1.4em;
 }
 
+/* Section inicio */
 
+#inicio {
+  background: var(--background1);
+  color: var(--color1);
+  padding: 10px 20px;
+}
+
+#inicio #nome {
+  margin: 20px 0px;
+  text-align: center;
+}
+
+#inicio #nome h1 {
+  font-weight: 700;
+  font-size: 2em;
+}
+
+#inicio h3 {
+  margin: 20px 0px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#logo {
+  text-align: center;
+}
+
+#logo img {
+  width: 250px;
+}
+
+.redes {
+  text-align: center;
+}
+
+#rede-icon {
+  color: var(--color-btn);
+  font-size: 2.5em;
+  margin: 25px 50px;
+}
+
+.text {
+  text-align: center;
+  padding: 5px;
+}

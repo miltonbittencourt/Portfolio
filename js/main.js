@@ -31,12 +31,26 @@ if (localStorage.getItem('data-theme') == 'dark') {
     darkBtn.checked = true 
 }
 
-darkBtn.addEventListener('change', () => {
+darkBtn.addEventListener('change', (event) => {
     let theme = localStorage.getItem('data-theme')
     
     if (!darkBtn.checked) {
         changeThemeToLight()
     } else {
         changeThemeToDark()
+    }
+
+    const label = document.getElementById('label')
+
+    label.classList.toggle('active')
+
+    const active = label.classList.contains('active')
+
+    event.currentTarget.setAttribute('aria-checked', 'active')
+
+    if(active) {
+        event.currentTarget.setAttribute('aria-checked', false)
+    } else {
+        event.currentTarget.setAttribute('aria-checked', true)
     }
 })
