@@ -3,7 +3,9 @@
 const btnMobile = document.getElementById('btn-mobile')
 
 function toggleMenu(event) {
-    if (event.type === 'touchstart') event.preventDefault
+    if (event.type === 'touchstart') {
+        event.preventDefault()
+    }
 
     const nav = document.getElementById('nav')
 
@@ -11,7 +13,7 @@ function toggleMenu(event) {
 
     const active = nav.classList.contains('active')
 
-    event.currentTarget.setAttribute('aria-extended', 'active')
+    event.currentTarget.setAttribute('aria-expanded', active)
 
     if(active) {
         event.currentTarget.setAttribute('aria-label', 'Fechar Menu')
@@ -42,15 +44,15 @@ darkBtn.addEventListener('change', (event) => {
 
     const label = document.getElementById('label')
 
-    label.classList.toggle('active')
+    label.classList.toggle('act')
 
-    const active = label.classList.contains('active')
+    const act = label.classList.contains('act')
 
-    event.currentTarget.setAttribute('aria-checked', 'active')
+    event.currentTarget.setAttribute('aria-checked', 'act')
 
-    if(active) {
-        event.currentTarget.setAttribute('aria-checked', false)
-    } else {
+    if(act) {
         event.currentTarget.setAttribute('aria-checked', true)
+    } else {
+        event.currentTarget.setAttribute('aria-checked', false)
     }
 })
