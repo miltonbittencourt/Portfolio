@@ -231,7 +231,7 @@ header {
 }
 
 #logo img {
-  width: 250px;
+  width: 225px;
 }
 
 .redes {
@@ -241,7 +241,7 @@ header {
 #rede-icon {
   color: var(--color-btn);
   font-size: 2.5em;
-  margin: 25px 50px;
+  margin: 25px 40px;
 }
 
 .text {
