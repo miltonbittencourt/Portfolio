@@ -7,8 +7,8 @@
     <title>Milton Bittencourt</title>
     <!-- Link CSS -->
     <link rel="stylesheet" href="css/main.css">
-    <!-- Link JS -->
-    <script src="js/main.js" defer></script>
+    <!-- Link FA -->
+    <script src="https://kit.fontawesome.com/fa471138b2.js" crossorigin="anonymous"></script>
     <script>
         const changeThemeToDark = () => {
             document.documentElement.setAttribute("data-theme", "dark")
@@ -27,6 +27,8 @@
 </head>
 <body>
     <header id="header">
+
+        <!-- Menu -->
         <nav id="nav">
             <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
                 <span id="hamb"></span>
@@ -39,7 +41,14 @@
             <li><a href="#contato">Contato</a></li>
           </ul>
         </nav>
+
+        <!-- Theme checkbox -->
         <input type="checkbox" name="toggle-dark" id="toggle-dark">
+        <label id="label" for="toggle-dark">
+            <i class="fa-solid fa-sun"></i>
+            <i class="fa-solid fa-moon"></i>
+            <div id="ball"></div>
+        </label>
     </header>
       
 
@@ -58,5 +67,8 @@
         </p>
           
     </section> -->
+
+    <!-- Link JS -->
+    <script src="js/main.js"></script>
 </body>
 </html>

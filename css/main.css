@@ -15,6 +15,7 @@
 * {
 margin: 0;
 padding: 0;
+border: 0;
 box-sizing: border-box;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -43,10 +44,11 @@ html[data-theme="dark"] {
 a {
   color: var(--color2);
   text-decoration: none;
+  transition: .3s;
 }
 
 a:hover {
-  background: rgba(0, 0, 0, .15);
+  font-size: 1.2em;
 }
 
 header {
@@ -145,4 +147,54 @@ header {
 }
 
 }
+
+/* Btn Muda Tema */
+
+#toggle-dark {
+  position: absolute;
+  opacity: 0;
+}
+
+#toggle-dark:checked + #label #ball {
+  transform: translateX(24px);
+}
+
+#label {
+  background-color: var(--color2);
+  border-radius: 50px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  height: 28px;
+  width: 55px;
+}
+
+#label #ball {
+  background-color: var(--background2);
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 4px;
+
+  height: 24px;
+  width: 24px;
+
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.fa-sun {
+  color: var(--background2);
+  font-size: 1.4em;
+}
+
+.fa-moon {
+  color: var(--background2);
+  font-size: 1.4em;
+}
+
 
