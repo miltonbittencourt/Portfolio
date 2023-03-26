@@ -212,7 +212,6 @@ header {
   background: var(--background1);
   color: var(--color1);
   padding: 10px 20px;
-  height: calc(100vh - 50px);
 }
 
 #inicio #nome {
