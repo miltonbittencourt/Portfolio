@@ -108,6 +108,7 @@ header {
 #menu a {
   padding: 1rem 0;
   margin: 0 1rem;
+  border-right: none;
   border-bottom: 2px solid rgba(0, 0, 0, .15);
   transition: .2s;
 }
