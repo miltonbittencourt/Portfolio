@@ -73,6 +73,7 @@ header {
 #menu a {
   display: block;
   padding: .5rem;
+  transition: .2s;
 }
 
 #btn-mobile {
@@ -107,6 +108,7 @@ header {
   padding: 1rem 0;
   margin: 0 1rem;
   border-bottom: 2px solid rgba(0, 0, 0, .05);
+  transition: .2s;
 }
 
 #btn-mobile {
@@ -229,9 +231,10 @@ header {
 
 #logo {
   text-align: center;
+  margin: 30px 0px;
 }
 
-#logo img {
+#logo-img {
   width: 225px;
 }
 
@@ -242,7 +245,7 @@ header {
 #rede-icon {
   color: var(--color-btn);
   font-size: 2.5em;
-  margin: 25px 30px;
+  margin: 40px 30px;
 }
 
 .text {

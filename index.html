@@ -21,11 +21,13 @@
     <script>
         const changeThemeToDark = () => {
             document.documentElement.setAttribute("data-theme", "dark")
+
             localStorage.setItem("data-theme", "dark")
         }
 
         const changeThemeToLight = () => {
             document.documentElement.setAttribute("data-theme", "light")
+
             localStorage.setItem("data-theme", "light")
         }
 
@@ -68,7 +70,7 @@
         </div>
         <h3>Sou um estudante com objetivo de me tornar um programador Front-end. </h3>
         <div id="logo">
-            <img src="images/Logo_Média_preview.png" alt="Foto de Milton" />
+            <img id="logo-img" src="images/Logo-LT.png" alt="Foto de Milton" />
         </div>
         <div class="redes">
             <a href="https://github.com/miltonbittencourt" target="_blank"><i id="rede-icon" class="fa-brands fa-square-github fa-2xl"></i></a>
