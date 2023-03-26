@@ -22,6 +22,28 @@ function toggleMenu(event) {
     }
 }
 
+const menuButton = document.getElementById('btn-mobile')
+const header = document.getElementById('header')
+const buttonContent = menuButton.innerHTML
+
+function checkMenuButtonPosition() {
+    const headerHeight = header.offsetHeight
+    const scrollPosition = window.pageYOffset
+
+    console.log()
+
+    if (scrollPosition > headerHeight) {
+        menuButton.classList.remove('btn-mobile-backn')
+        menuButton.classList.add('btn-mobile-back')
+        menuButton.innerHTML = buttonContent.replace('Menu', '')
+    } else {
+        menuButton.classList.remove('btn-mobile-back')
+        menuButton.classList.add('btn-mobile-backn')
+        menuButton.innerHTML = buttonContent
+    }
+}
+
+window.addEventListener('scroll', checkMenuButtonPosition)
 btnMobile.addEventListener('click', toggleMenu)
 btnMobile.addEventListener('touchstart', toggleMenu)
 

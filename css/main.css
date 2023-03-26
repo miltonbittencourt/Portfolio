@@ -87,41 +87,71 @@ header {
 
 #menu {
   display: block;
-  position: absolute;
+  position: fixed;
   width: 100%;
-  top: 50px;
+  top: 0px;
   left: 0px;
+  text-align: center;
+  border-bottom-right-radius: 5px;
   background: var(--background2);
   transition: .6s;
-  z-index: 1000;
+  z-index: 99;
   height: 0px;
   visibility: hidden;
   overflow-y: hidden;
 }
 
 #nav.active #menu {
-  height: calc(100vh - 50px);
+  height: 100vh;
   visibility: visible;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 
 #menu a {
   padding: 1rem 0;
-  margin: 0 1rem;
+  margin: 0;
   border-right: none;
   border-bottom: 2px solid rgba(0, 0, 0, .15);
   transition: .2s;
 }
 
+#menu .redes a {
+  border-bottom: 0px;
+}
+
+#menu-logo {
+  background: rgba(0, 0, 0, .15);
+}
+
+#menu-logo img {
+  margin-top: 50px;
+  width: 150px;
+}
+
 #btn-mobile {
   color: var(--color2);
   display: flex;
+  position: fixed;
+  top: 10px;
   padding: .5rem 1rem;
   font-size: 1rem;
   border: none;
-  background: none;
+  border-radius: 10px;
   cursor: pointer;
   gap: .5rem;
+  z-index: 100;
+}
+
+.btn-mobile-backn {
+  background: none;
+}
+
+.btn-mobile-back {
+  background: rgba(0, 0, 0, .5);
+}
+
+#nav.active #btn-mobile {
+  background: none;
 }
 
 #hamb {
@@ -162,6 +192,8 @@ header {
 #toggle-dark {
   position: absolute;
   opacity: 0;
+  width: 0px;
+  height: 0px;
 }
 
 #toggle-dark:checked + #label #ball {
@@ -241,15 +273,38 @@ header {
 
 .redes {
   text-align: center;
+  justify-content: space-between;
+  display: flex;
+  margin: 35px 60px;
 }
 
-#rede-icon {
+.rede-icon {
   color: var(--color-btn);
   font-size: 2.5em;
-  margin: 35px 30px;
 }
 
 .text {
   text-align: center;
   padding: 5px;
+}
+
+/* Section Sobre */
+
+#sobre {
+  background: var(--background2);
+  color: var(--color2);
+  padding: 10px 20px;
+  text-align: center;
+}
+
+#sobre h2 {
+  margin-top: 20px;
+  font-size: 1.5em;
+  text-align: left;
+}
+
+#perfil {
+  margin: 20px 0px;
+  width: 225px;
+  border-radius: 50%;
 }
