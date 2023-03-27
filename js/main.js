@@ -1,11 +1,6 @@
 /* Script Menu */
 
-const btnMobile = document.getElementById('btn-mobile')
-
-function toggleMenu(event) {
-    if (event.type === 'touchstart') {
-        event.preventDefault()
-    }
+function toggleMenu() {
 
     const nav = document.getElementById('nav')
 
@@ -13,39 +8,35 @@ function toggleMenu(event) {
 
     const active = nav.classList.contains('active')
 
-    event.currentTarget.setAttribute('aria-expanded', active)
+    currentTarget.setAttribute('aria-expanded', active)
 
     if(active) {
-        event.currentTarget.setAttribute('aria-label', 'Fechar Menu')
+        currentTarget.setAttribute('aria-label', 'Fechar Menu')
     } else {
-        event.currentTarget.setAttribute('aria-label', 'Abrir Menu')
+        currentTarget.setAttribute('aria-label', 'Abrir Menu')
     }
 }
 
-const menuButton = document.getElementById('btn-mobile')
+const btnMobile = document.getElementById('btn-mobile')
 const header = document.getElementById('header')
-const buttonContent = menuButton.innerHTML
+const buttonContent = btnMobile.innerHTML
 
-function checkMenuButtonPosition() {
+function checkBtnMobilePosition() {
     const headerHeight = header.offsetHeight
     const scrollPosition = window.pageYOffset
 
-    console.log()
-
-    if (scrollPosition > headerHeight) {
-        menuButton.classList.remove('btn-mobile-backn')
-        menuButton.classList.add('btn-mobile-back')
-        menuButton.innerHTML = buttonContent.replace('Menu', '')
+    if (scrollPosition > (headerHeight - 50)) {
+        btnMobile.classList.remove('btn-mobile-backn')
+        btnMobile.classList.add('btn-mobile-back')
+        btnMobile.innerHTML = buttonContent.replace('Menu', '')
     } else {
-        menuButton.classList.remove('btn-mobile-back')
-        menuButton.classList.add('btn-mobile-backn')
-        menuButton.innerHTML = buttonContent
+        btnMobile.classList.remove('btn-mobile-back')
+        btnMobile.classList.add('btn-mobile-backn')
+        btnMobile.innerHTML = buttonContent
     }
 }
 
-window.addEventListener('scroll', checkMenuButtonPosition)
-btnMobile.addEventListener('click', toggleMenu)
-btnMobile.addEventListener('touchstart', toggleMenu)
+window.addEventListener('scroll', checkBtnMobilePosition)
 
 /* Script Tema */
 

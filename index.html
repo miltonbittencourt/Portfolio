@@ -44,15 +44,15 @@
 
         <!-- Menu -->
         <nav id="nav">
-            <button aria-label="Abrir Menu" id="btn-mobile" class="btn-mobile-backn" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+            <button aria-label="Abrir Menu" id="btn-mobile" class="btn-mobile-backn" aria-haspopup="true" aria-controls="menu" aria-expanded="false" onclick="toggleMenu()">Menu
                 <span id="hamb"></span>
             </button>
             <ul id="menu" role="menu">
-                <li><a href="#inicio" id="menu-logo"><img src="images/Logo.png" alt="Logo"></a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#inicio" id="menu-logo" onclick="toggleMenu()"><img src="images/Logo.png" alt="Logo"></a></li>
+                <li><a href="#sobre" onclick="toggleMenu()">Sobre</a></li>
+                <li><a href="#habilidades" onclick="toggleMenu()">Habilidades</a></li>
+                <li><a href="#projetos" onclick="toggleMenu()">Projetos</a></li>
+                <li><a href="#contato" onclick="toggleMenu()">Contato</a></li>
                 <li>
                     <div class="redes">
                         <a href="https://github.com/miltonbittencourt" target="_blank"><i class="fa-brands fa-square-github fa-2xl rede-icon"></i></a>
@@ -73,9 +73,9 @@
     </header>
       
 
-    <section id="inicio">
+    <section class="section" id="inicio">
         <div id="nome">
-            <p class="text">Olá, meu nome é</p>
+            <p>Olá, meu nome é</p>
             <h1>Milton Bittencourt.</h1>
         </div>
         <h3>Sou um estudante com objetivo de me tornar um programador Front-end. </h3>
@@ -87,12 +87,12 @@
             <a href="https://www.linkedin.com/in/milton-bittencourt-11b1ba167/" target="_blank"><i id="rede-icon" class="fa-brands fa-linkedin fa-2xl rede-icon"></i></a>
             <a href="https://www.instagram.com/bittencourt_milton/" target="blank"><i id="rede-icon" class="fa-brands fa-instagram fa-2xl rede-icon" ></i></a>
         </div>
-        <p class="text">
+        <p>
             Navegue pelo meu site para saber mais sobre minha jornada de aprendizado e os projetos nos quais tenho trabalhado.
         </p>  
     </section>
 
-    <section id="sobre">
+    <section class="section" id="sobre">
         <h2>Sobre Mim</h2>
         <div id="about-content">
             <img id="perfil" src="images/perfil.jpg" alt="Milton Bittencourt" />

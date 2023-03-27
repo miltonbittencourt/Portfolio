@@ -70,11 +70,19 @@ header {
   gap: .5rem;
 }
 
+#menu li:first-child {
+  display: none;
+}
+
 #menu a {
   display: block;
   padding: .5rem;
   border-right: 2px solid rgba(0, 0, 0, .15);
   transition: .1s;
+}
+
+#menu .redes {
+  display: none;
 }
 
 #btn-mobile {
@@ -92,7 +100,6 @@ header {
   top: 0px;
   left: 0px;
   text-align: center;
-  border-bottom-right-radius: 5px;
   background: var(--background2);
   transition: .6s;
   z-index: 99;
@@ -107,12 +114,20 @@ header {
   overflow-y: hidden;
 }
 
+#menu li:first-child {
+  display: block;
+}
+
 #menu a {
   padding: 1rem 0;
-  margin: 0;
   border-right: none;
   border-bottom: 2px solid rgba(0, 0, 0, .15);
   transition: .2s;
+}
+
+#menu .redes {
+  display: flex;
+  justify-content: center;
 }
 
 #menu .redes a {
@@ -121,6 +136,7 @@ header {
 
 #menu-logo {
   background: rgba(0, 0, 0, .15);
+  text-align: center;
 }
 
 #menu-logo img {
@@ -244,11 +260,11 @@ header {
   background: var(--background1);
   color: var(--color1);
   padding: 10px 20px;
+  text-align: center;
 }
 
 #inicio #nome {
-  margin: 10px 0px;
-  text-align: center;
+  margin: 30px 0px;
 }
 
 #inicio #nome h1 {
@@ -257,13 +273,11 @@ header {
 }
 
 #inicio h3 {
-  margin: 10px 0px;
-  text-align: center;
+  margin: 20px 0px;
   font-size: 1.2em;
 }
 
 #logo {
-  text-align: center;
   margin: 30px 0px;
 }
 
@@ -272,20 +286,20 @@ header {
 }
 
 .redes {
-  text-align: center;
-  justify-content: space-between;
-  display: flex;
-  margin: 35px 60px;
+  display: block;
+  margin: 50px 0px;
 }
 
 .rede-icon {
+  margin: 0px 30px;
   color: var(--color-btn);
   font-size: 2.5em;
 }
 
 .text {
-  text-align: center;
-  padding: 5px;
+  text-align: left;
+  line-height: 1.5em;
+  padding: 5px 0px;
 }
 
 /* Section Sobre */
@@ -305,6 +319,6 @@ header {
 
 #perfil {
   margin: 20px 0px;
-  width: 225px;
+  width: 150px;
   border-radius: 50%;
 }
