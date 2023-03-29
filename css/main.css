@@ -269,7 +269,7 @@ header {
 }
 
 #inicio #nome {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 #inicio #nome h1 {
@@ -279,22 +279,32 @@ header {
 }
 
 #inicio h4 {
-  margin: 1rem 0px;
+  margin: 2rem 0px;
   font-size: 1.2em;
 }
 
 #logo {
-  margin: 2rem 0px;
+  margin: 2.5rem 0px;
 }
 
 #logo-img {
   width: 50vw;
-  
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .redes {
   display: block;
-  margin: 1.5rem 0px;
+  margin: 2.5rem 0px;
 }
 
 .redes .rede-icon {
