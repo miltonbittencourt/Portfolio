@@ -48,7 +48,7 @@
                 <span id="hamb"></span>
             </button>
             <ul id="menu" role="menu">
-                <li><a href="#inicio" id="menu-logo" onclick="toggleMenu()"><img src="images/Logo.png" alt="Logo"></a></li>
+                <li><a href="#header" id="menu-logo" onclick="toggleMenu()"><img src="images/Logo.png" alt="Logo"></a></li>
                 <li><a href="#sobre" onclick="toggleMenu()">Sobre</a></li>
                 <li><a href="#habilidades" onclick="toggleMenu()">Habilidades</a></li>
                 <li><a href="#projetos" onclick="toggleMenu()">Projetos</a></li>
@@ -78,14 +78,14 @@
             <p>Olá, meu nome é</p>
             <h1>Milton Bittencourt.</h1>
         </div>
-        <h3>Sou um estudante com objetivo de me tornar um programador Front-end. </h3>
+        <h4>Sou um estudante com objetivo de me tornar um programador Front-end. </h4>
         <div id="logo">
-            <img id="logo-img" src="images/Logo.png" alt="Foto de Milton" />
+            <img id="logo-img" src="images/Logo.png" alt="Logotipo composta por três tons de azul, contendo cinco colunas com um triangulo acima, remetendo ao formato da letra M" />
         </div>
         <div class="redes">
-            <a href="https://github.com/miltonbittencourt" target="_blank"><i id="rede-icon" class="fa-brands fa-square-github fa-2xl rede-icon"></i></a>
-            <a href="https://www.linkedin.com/in/milton-bittencourt-11b1ba167/" target="_blank"><i id="rede-icon" class="fa-brands fa-linkedin fa-2xl rede-icon"></i></a>
-            <a href="https://www.instagram.com/bittencourt_milton/" target="blank"><i id="rede-icon" class="fa-brands fa-instagram fa-2xl rede-icon" ></i></a>
+            <a href="https://github.com/miltonbittencourt" target="_blank"><i class="fa-brands fa-square-github fa-2xl rede-icon" alt="Ícone do Github"></i></a>
+            <a href="https://www.linkedin.com/in/milton-bittencourt-11b1ba167/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl rede-icon" alt="Ícone do LinkedIn"></i></a>
+            <a href="https://www.instagram.com/bittencourt_milton/" target="blank"><i class="fa-brands fa-instagram fa-2xl rede-icon"  alt="Ícone do Instragram"></i></a>
         </div>
         <p>
             Navegue pelo meu site para saber mais sobre minha jornada de aprendizado e os projetos nos quais tenho trabalhado.
@@ -93,24 +93,53 @@
     </section>
 
     <section class="section" id="sobre">
-        <h2>Sobre Mim</h2>
+        <h2 class="sub-titulo">Sobre Mim</h2>
         <div id="about-content">
-            <img id="perfil" src="images/perfil.jpg" alt="Milton Bittencourt" />
-            <div>
-                <p class="text">
-                    Sou apaixonado por criar soluções inovadoras e atraentes que proporcionem uma experiência incrível para os usuários. Atualmente, estou aprimorando minhas habilidades em HTML, CSS e JavaScript. Além disso, estou estudando sobre o uso de APIs e métodos de estilização.
-                </p>
-                <p class="text">
-                    Além do desenvolvimento web, sou um entusiasta da tecnologia e estou sempre em busca de aprender novas habilidades e explorar as últimas tendências. Quando não estou codificando, gosto de passar meu tempo livre com meus hobbies favoritos, que são livros, filmes, séries e jogos. Também tenho uma rotina diária de atividades físicas, tanto na academia quanto ao ar livre.
-                </p>
-                <p class="text">
-                    Estou ansioso para continuar minha jornada de aprendizado e me tornar um profissional altamente qualificado na área de desenvolvimento web. Confira meu portfólio para ver exemplos de meus projetos e habilidades. Se quiser entrar em contato comigo, sinta-se à vontade para me enviar uma mensagem na seção de contato ou em qualquer uma das redes sociais aqui dispostas.
-                </p>
-            </div>
+            <img id="perfil" src="images/perfil.jpg" alt="Foto do rosto de Milton Bittencourt" />
+            <p class="text">
+                Sou apaixonado por criar soluções inovadoras e atraentes que proporcionem uma experiência incrível para os usuários. Atualmente, estou aprimorando minhas habilidades em HTML, CSS e JavaScript. Além disso, estou estudando sobre o uso de frameworks e APIs.
+            </p>
+            <p class="text">
+                Além do desenvolvimento web, sou um entusiasta da tecnologia e estou sempre em busca de aprender novas habilidades e explorar as últimas tendências. Quando não estou codificando, gosto de passar meu tempo livre com meus hobbies favoritos, que são livros, filmes, séries e jogos. Também tenho uma rotina diária de atividades físicas, tanto na academia quanto ao ar livre.
+            </p>
+            <p class="text">
+                Estou ansioso para continuar minha jornada de aprendizado e me tornar um profissional altamente qualificado na área de desenvolvimento web. Confira meu portfólio para ver exemplos de meus projetos e habilidades. Se quiser entrar em contato comigo, sinta-se à vontade para me enviar uma mensagem na seção de contato ou em qualquer uma das redes sociais aqui dispostas.
+            </p>
         </div>
     </section>
-    
-    
+
+    <section class="section" id="habilidades">
+        <h2 class="sub-titulo">Habilidades</h2>
+        <section class="skill">
+            <h3>HTML</h3>
+            <div class="skill-content">
+                <p>Domínio das tags HTML5, criação de estrutura e semântica de páginas web, uso de elementos de formulário, integração de mídia, navegação, acessibilidade e técnicas de SEO.</p>
+                <i class="fa-brands fa-html5 fa-2xl h-icon" alt="Ícone do HTML5"></i>
+            </div>
+        </section>
+        <section class="skill">
+            <h3>CSS</h3>
+            <div class="skill-content">
+                <p>Experiência com CSS3, incluindo seletores, pseudo-elementos e pseudo-classes, propriedades de estilo, design responsivo com media queries,  posicionamento (flexbox e grid) e variáveis CSS.</p>
+                <i class="fa-brands fa-css3-alt fa-2xl h-icon" alt="Ícone do CSS3"></i>
+            </div>
+        </section>
+        <section class="skill">
+            <h3>JavaScript</h3>
+            <div class="skill-content">
+                <p>Conhecimento em JavaScript, incluindo sintaxe e estruturas básicas (variáveis, funções, loops, condicionais e eventos), manipulação do DOM e ES6+.</p>
+                <i class="fa-brands fa-square-js fa-2xl h-icon" alt="Ícone do JavaScript"></i>
+            </div>
+        </section>
+        <section class="skill">
+            <h3>Git</h3>
+            <div class="skill-content">
+                <p>Experiência com o sistema de versionamento Git, incluindo comandos básicos. Entendimento de boas práticas de fluxo de trabalho, como GitFlow e colaboração com outros desenvolvedores usando plataformas como GitHub.</p>
+                <i class="fa-brands fa-git-alt fa-2xl h-icon" alt="Ícone do Git"></i>
+            </div>
+        </section>
+    </section>
+      
     <!-- Link JS -->
     <script src="js/main.js"></script>
 </body>

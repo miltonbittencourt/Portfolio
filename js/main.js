@@ -1,23 +1,25 @@
-/* Script Menu */
+/* Animação Menu */
+
+const nav = document.getElementById('nav')
+const btnMobile = document.getElementById('btn-mobile')
 
 function toggleMenu() {
-
-    const nav = document.getElementById('nav')
 
     nav.classList.toggle('active')
 
     const active = nav.classList.contains('active')
 
-    currentTarget.setAttribute('aria-expanded', active)
+    btnMobile.setAttribute('aria-expanded', active)
 
     if(active) {
-        currentTarget.setAttribute('aria-label', 'Fechar Menu')
+        btnMobile.setAttribute('aria-label', 'Fechar Menu')
     } else {
-        currentTarget.setAttribute('aria-label', 'Abrir Menu')
+        btnMobile.setAttribute('aria-label', 'Abrir Menu')
     }
 }
 
-const btnMobile = document.getElementById('btn-mobile')
+/* Menu Hamburguer */
+
 const header = document.getElementById('header')
 const buttonContent = btnMobile.innerHTML
 
@@ -25,7 +27,7 @@ function checkBtnMobilePosition() {
     const headerHeight = header.offsetHeight
     const scrollPosition = window.pageYOffset
 
-    if (scrollPosition > (headerHeight - 50)) {
+    if (scrollPosition > (headerHeight - 40)) {
         btnMobile.classList.remove('btn-mobile-backn')
         btnMobile.classList.add('btn-mobile-back')
         btnMobile.innerHTML = buttonContent.replace('Menu', '')
@@ -38,7 +40,7 @@ function checkBtnMobilePosition() {
 
 window.addEventListener('scroll', checkBtnMobilePosition)
 
-/* Script Tema */
+/* Tema */
 
 const darkBtn = document.getElementById('toggle-dark')
 

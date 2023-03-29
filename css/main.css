@@ -29,6 +29,8 @@ html {
   --color2: #f1f1f1;
   --colorh: #0D0F12;
   --color-btn: #0D3A58;
+
+  scroll-behavior: smooth;
 }
 
 /* Modo Escuro */
@@ -256,63 +258,63 @@ header {
 
 /* Section inicio */
 
-#inicio {
-  background: var(--background1);
-  color: var(--color1);
-  padding: 10px 20px;
+.section {
+  padding: 3rem 2rem;
   text-align: center;
 }
 
+#inicio {
+  background: var(--background1);
+  color: var(--color1);
+}
+
 #inicio #nome {
-  margin: 30px 0px;
+  margin-bottom: 1rem;
 }
 
 #inicio #nome h1 {
   font-weight: 700;
   font-size: 2em;
+  color: var(--colorh);
 }
 
-#inicio h3 {
-  margin: 20px 0px;
+#inicio h4 {
+  margin: 2rem 0px;
   font-size: 1.2em;
 }
 
 #logo {
-  margin: 30px 0px;
+  margin: 2.5rem 0px;
 }
 
 #logo-img {
   width: 225px;
+  
 }
 
 .redes {
   display: block;
-  margin: 50px 0px;
+  margin: 3rem 0px;
 }
 
-.rede-icon {
-  margin: 0px 30px;
+.redes .rede-icon {
+  margin: 0px 1.5rem;
   color: var(--color-btn);
   font-size: 2.5em;
 }
 
-.text {
-  text-align: left;
-  line-height: 1.5em;
-  padding: 5px 0px;
-}
-
 /* Section Sobre */
+
+.sub-titulo {
+  margin-bottom: 2rem;
+}
 
 #sobre {
   background: var(--background2);
   color: var(--color2);
-  padding: 10px 20px;
-  text-align: center;
 }
 
 #sobre h2 {
-  margin-top: 20px;
   font-size: 1.5em;
   text-align: left;
 }
@@ -321,4 +323,64 @@ header {
   margin: 20px 0px;
   width: 150px;
   border-radius: 50%;
+  border: 3px solid var(--color2);
+}
+
+.text {
+  position: relative;
+  line-height: 1.5em;
+  text-align: center;
+  margin: 1rem 0rem;
+  padding: 0.5rem 0.7rem;
+}
+
+.text::before, .text::after {
+  content: "";
+  position: absolute;
+  width: 35%;
+  height: 30%;
+  border-radius: 5px;
+  border-style: solid;
+}
+
+.text::before {
+  top: 0;
+  left: 0;
+  border-color: var(--color2) transparent transparent var(--color2);
+}
+
+.text::after {
+  bottom: 0;
+  right: 0;
+  border-color: transparent var(--color2) var(--color2) transparent;
+}
+
+/* Seção Habilidades */
+
+#habilidades {
+  background-color: var(--background1);
+  color: var(--color1);
+  text-align: left;
+}
+
+.skill {
+  margin: 2rem 0px;
+}
+
+.skill-content {
+  display: flex;
+  margin: 0.5rem 0px;
+  align-items: center;
+}
+
+.skill-content  p {
+  margin-right: 1.5rem;
+}
+
+.skill-content .h-icon {
+  padding-top: 2rem;
+}
+
+.skill-content .h-icon::before {
+  font-size: 4em;
 }
