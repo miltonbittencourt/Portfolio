@@ -7,7 +7,7 @@
     <title>Milton Bittencourt</title>
 
     <!-- Link Favicon -->
-    <link rel="shortcut icon" href="images/Logo-fav.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/LogoFav-13x13.ico" type="image/x-icon">
 
     <!-- Link CSS -->
     <link rel="stylesheet" href="css/main.css">
@@ -93,7 +93,7 @@
     </section>
 
     <section class="section" id="sobre">
-        <h2 class="sub-titulo">Sobre Mim</h2>
+        <h2 class="section-title">Sobre Mim</h2>
         <div id="about-content">
             <img id="perfil" src="images/perfil.jpg" alt="Foto do rosto de Milton Bittencourt" />
             <p class="text">
@@ -109,30 +109,30 @@
     </section>
 
     <section class="section" id="habilidades">
-        <h2 class="sub-titulo">Habilidades</h2>
+        <h2 class="section-title">Habilidades</h2>
         <section class="skill">
-            <h3>HTML</h3>
+            <h3 class="sub-titulo">HTML</h3>
             <div class="skill-content">
                 <p>Domínio das tags HTML5, criação de estrutura e semântica de páginas web, uso de elementos de formulário, integração de mídia, navegação, acessibilidade e técnicas de SEO.</p>
                 <i class="fa-brands fa-html5 fa-2xl h-icon" alt="Ícone do HTML5"></i>
             </div>
         </section>
         <section class="skill">
-            <h3>CSS</h3>
+            <h3 class="sub-titulo">CSS</h3>
             <div class="skill-content">
                 <p>Experiência com CSS3, incluindo seletores, pseudo-elementos e pseudo-classes, propriedades de estilo, design responsivo com media queries,  posicionamento (flexbox e grid) e variáveis CSS.</p>
                 <i class="fa-brands fa-css3-alt fa-2xl h-icon" alt="Ícone do CSS3"></i>
             </div>
         </section>
         <section class="skill">
-            <h3>JavaScript</h3>
+            <h3 class="sub-titulo">JavaScript</h3>
             <div class="skill-content">
                 <p>Conhecimento em JavaScript, incluindo sintaxe e estruturas básicas (variáveis, funções, loops, condicionais e eventos), manipulação do DOM e ES6+.</p>
                 <i class="fa-brands fa-square-js fa-2xl h-icon" alt="Ícone do JavaScript"></i>
             </div>
         </section>
         <section class="skill">
-            <h3>Git</h3>
+            <h3 class="sub-titulo">Git</h3>
             <div class="skill-content">
                 <p>Experiência com o sistema de versionamento Git, incluindo comandos básicos. Entendimento de boas práticas de fluxo de trabalho, como GitFlow e colaboração com outros desenvolvedores usando plataformas como GitHub.</p>
                 <i class="fa-brands fa-git-alt fa-2xl h-icon" alt="Ícone do Git"></i>
@@ -141,25 +141,43 @@
     </section>
 
     <section class="section" id="projetos">
-        <h2>Projetos</h2>
-      
-        <article>
-          <h3>Projeto 1</h3>
-          <img src="caminho/para/imagem1.jpg" alt="Descrição breve do Projeto 1" />
-          <p>Descrição do Projeto 1...</p>
-          <a href="url_do_projeto1" target="_blank" rel="noopener noreferrer">Visitar Projeto 1</a>
+        <h2 class="section-title">Projetos</h2>
+        <p class="text">Aqui estão meus principais projetos, apresentados em ordem de complexidade e cronológica. Para acessar e conferir qualquer um deles, basta clicar sobre sua imagem!</p>
+
+        <article class="projeto">
+            <h3 class="sub-titulo">Café Serrana</h3>
+            <p>O site da Café Serrana foi projetado para ser uma landing page de produto fictício de café em grãos. Tem um desing responsivo, assim como um HTML semântico e acessível. Foram utlizados apenas HTML5, CSS3 e JavaScript.</p>
+            <a href="https://miltonbittencourt.github.io/cafe-serrana/" target="_blank" rel="noopener noreferrer"><img src="images/CafeSerrana-670x606.png" alt="Projeto de uma página para comercialização de um produto fictício de café em grãos." /></a>
         </article>
+
+        <!-- Em Breve -->
       
-        <article>
-          <h3>Projeto 2</h3>
-          <img src="caminho/para/imagem2.jpg" alt="Descrição breve do Projeto 2" />
-          <p>Descrição do Projeto 2...</p>
-          <a href="url_do_projeto2" target="_blank" rel="noopener noreferrer">Visitar Projeto 2</a>
-        </article>
-      
-        <!-- Mais projetos... -->
-      
+        <article class="projeto">
+            <h3 class="sub-titulo">Em breve...</h3>
+            <p>Mais projetos estão a caminho e logo mais serão adicionados!</p>
+            <a href="#projetos" rel="noopener noreferrer"><img src="images/EmBreve-800x450.png" alt="Em breve" /></a>
+        </article>      
       </section>
+
+      <section class="section" id="contato">
+        <h2 class="section-title">Contato</h2>
+        <p class="text">Se você deseja entrar em contato comigo, preencha o formulário abaixo:</p>
+        <div id="formulario">
+            <form action="https://formspree.io/f/xwkjrvnd" method="POST">
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="_replyto" placeholder="Seu e-mail" required>
+            
+              <label for="mensagem">Mensagem:</label>
+              <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" rows="4" required></textarea>
+            
+              <input id="enviar" type="submit" value="Enviar">
+            </form>
+        </div>
+      </section>
+      
       
       
     <!-- Link JS -->

@@ -70,6 +70,7 @@ header {
   display: flex;
   list-style: none;
   gap: .5rem;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.349);
 }
 
 #menu li:first-child {
@@ -261,6 +262,7 @@ header {
 .section {
   padding: 1.5rem 2rem;
   text-align: left;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.349);
 }
 
 #inicio {
@@ -316,13 +318,15 @@ header {
 
 /* Section Sobre */
 
-.sub-titulo {
+.section-title {
   margin-bottom: 2rem;
+  font-size: 1.5em;
 }
 
 #sobre {
   background: var(--background2);
   color: var(--color2);
+  text-align: center;
 }
 
 #sobre h2 {
@@ -338,9 +342,9 @@ header {
 }
 
 .text {
+  text-align: center;
   position: relative;
   line-height: 1.5em;
-  text-align: center;
   margin: 1rem 0rem;
   padding: 0.5rem 0.7rem;
 }
@@ -357,16 +361,21 @@ header {
 .text::before {
   top: 0;
   left: 0;
-  border-color: var(--color2) transparent transparent var(--color2);
+  border-color: currentColor transparent transparent currentColor;
 }
 
 .text::after {
   bottom: 0;
   right: 0;
-  border-color: transparent var(--color2) var(--color2) transparent;
+  border-color: transparent currentColor currentColor transparent;
 }
 
 /* Seção Habilidades */
+
+.sub-titulo {
+  width: 50vw;
+  border-bottom: 2px solid currentColor;
+}
 
 #habilidades {
   background-color: var(--background1);
@@ -394,4 +403,73 @@ header {
 
 .skill-content .h-icon::before {
   font-size: 4em;
+}
+
+/* Projetos */
+
+#projetos {
+  background: var(--background2);
+  color: var(--color2);
+}
+
+.projeto {
+  margin: 2rem 0rem;
+}
+
+.projeto h3 {
+  margin-bottom: 1rem;
+}
+
+.projeto p {
+  margin-bottom: 1rem;
+}
+
+.projeto img {
+  width: 80vw;
+  border: 2px solid var(--color2);
+  border-radius: 10px;
+}
+
+/* Contato */
+
+#contato {
+  background-color: var(--background1);
+  color: var(--color1);
+}
+
+#contato form {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0px;
+  /* padding: .5rem;
+  background: rgba(0, 0, 0, .15);
+  border-radius: 10px; */
+}
+
+#contato label {
+  margin-bottom: 0.5rem;
+}
+
+#contato input,
+#contato textarea {
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--color1);
+  border-radius: 5px;
+  resize: none;
+}
+
+#enviar {
+  width: 100px;
+  padding: 0.5rem 1rem;
+  background-color: var(--background2);
+  color: var(--color2);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#enviar:hover {
+  background-color: var(--color-btn);
+  font-size: 1.2rem;
 }
