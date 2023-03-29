@@ -260,12 +260,13 @@ header {
 
 .section {
   padding: 1.5rem 2rem;
-  text-align: center;
+  text-align: left;
 }
 
 #inicio {
   background: var(--background1);
   color: var(--color1);
+  text-align: center;
 }
 
 #inicio #nome {
