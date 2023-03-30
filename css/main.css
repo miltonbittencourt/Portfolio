@@ -133,6 +133,10 @@ header {
   justify-content: center;
 }
 
+#menu .redes .rede-icon {
+  color: var(--color2);
+}
+
 #menu .redes a {
   border-bottom: 0px;
 }
@@ -405,6 +409,16 @@ header {
   font-size: 4em;
 }
 
+.skill-link {
+  font-size: 1em;
+  color: var(--color2);
+}
+
+.skill-link:hover {
+  font-size: 1em;
+  text-decoration: underline;
+}
+
 /* Projetos */
 
 #projetos {
@@ -441,9 +455,6 @@ header {
   display: flex;
   flex-direction: column;
   margin: 2rem 0px;
-  /* padding: .5rem;
-  background: rgba(0, 0, 0, .15);
-  border-radius: 10px; */
 }
 
 #contato label {
@@ -472,4 +483,21 @@ header {
 #enviar:hover {
   background-color: var(--color-btn);
   font-size: 1.2rem;
+}
+
+footer {
+  background-color: var(--background2);
+  color: var(--color2);
+  padding: 1rem;
+  text-align: center;
+}
+
+footer .redes {
+  margin: 0.5rem 0px;
+}
+
+footer .redes .rede-icon {
+  margin: 0px 2rem;
+  color: var(--color2);
+  font-size: 2em;
 }
