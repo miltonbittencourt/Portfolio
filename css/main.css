@@ -492,8 +492,13 @@ footer {
   text-align: center;
 }
 
+footer p {
+  margin-top: 1rem;
+  font-size: .7em;
+}
+
 footer .redes {
-  margin: 0.5rem 0px;
+  margin: 0px 0px;
 }
 
 footer .redes .rede-icon {
