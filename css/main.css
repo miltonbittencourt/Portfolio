@@ -1,16 +1,5 @@
 @charset "UTF-8";
 
-/*  Cores
-  --cinza-escuro: #0D0F12;
-  --cinza-medio: #1B1F23;
-  --cinza-claro: #D9D9D9;
-  --cinza-clarissimo: #F1F1F1;
-  --azul-profundo: #0D3A58;
-  --azul-medio: #1F618D;
-  --azul-intermediario: #4a9ae1;
-  --azul-claro: #85C1E9;
- */
-
 /* Reset de margin e padding */
 * {
 margin: 0;
