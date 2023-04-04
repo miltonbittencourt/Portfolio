@@ -39,13 +39,8 @@ body {
 }
 
 a {
-  color: var(--color2);
   text-decoration: none;
   transition: .3s;
-}
-
-a:hover {
-  font-size: 1.2em;
 }
 
 /* Header */
@@ -57,6 +52,14 @@ header {
   align-items: center;
   justify-content: space-between;
   background: var(--background2);
+}
+
+header a {
+  color: var(--color2);
+}
+
+header a:hover {
+  font-size: 1.2em;
 }
 
 /* Menu */
@@ -130,7 +133,13 @@ header {
 #menu .curriculoBtn {
   display: inline-block;
   margin-top: 1rem;
-  border-bottom: none;
+  border: 2px solid var(--color-btn);
+  background: var(--background1);
+}
+
+#menu .curriculoBtn:hover {
+  background: var(--color-btn);
+  font-size: 1em;
 }
 
 #menu .redes {
@@ -144,6 +153,10 @@ header {
 
 #menu .redes a {
   border-bottom: 0px;
+}
+
+#menu .redes a:hover {
+  font-size: 1em;
 }
 
 #menu-logo {
@@ -232,7 +245,6 @@ header {
   background-color: var(--color2);
   border-radius: 50px;
   cursor: pointer;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -281,7 +293,7 @@ header {
 }
 
 #inicio #nome {
-  margin-bottom: 1.5rem;
+  margin: 2.5rem 0px;
 }
 
 #inicio #nome h1 {
@@ -291,16 +303,17 @@ header {
 }
 
 #inicio #nome h4 {
-  margin: 2rem 0px;
+  margin: 1.5rem 0px;
   font-size: 1.2em;
 }
 
 #logo {
-  margin: 2.5rem 0px;
+  margin: 3.5rem 0px;
 }
 
 #logo-img {
   width: 50vw;
+  max-width: 300px;
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
 }
@@ -314,19 +327,41 @@ header {
   }
 }
 
+.curriculoBtn {
+  background-color: var(--background2);
+  padding: .5rem;
+  text-align: center;
+  border: 2px solid var(--color-btn);
+  border-radius: 5px;
+}
+
+.curriculoBtn button {
+  color: var(--colorh);
+  background: none;
+  width: 150px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.curriculoBtn:hover {
+  background-color: var(--color-btn);
+}
+
 .redes {
   display: block;
-  margin: 2.5rem 0px;
+  margin: 3.5rem 0px;
+  text-align: center;
 }
 
 .redes .rede-icon {
   margin: 0px 1.5rem;
   color: var(--color-btn);
   font-size: 2.5em;
+  transition: .3s;
 }
 
-#inicio .curriculoBtn {
-  display: none;
+.redes .rede-icon:hover {
+  font-size: 3.5em;
 }
 
 /* Section Sobre */
@@ -334,6 +369,7 @@ header {
 .section-title {
   margin-bottom: 2rem;
   font-size: 1.5em;
+  text-align: left;
 }
 
 #sobre {
@@ -342,38 +378,12 @@ header {
   text-align: center;
 }
 
-#sobre h2 {
-  font-size: 1.5em;
-  text-align: left;
-}
-
 #perfil {
   margin: 1rem 0px;
-  width: 150px;
+  width: 35vw;
+  max-width: 200px;
   border-radius: 50%;
   border: 3px solid var(--color2);
-}
-
-.curriculoBtn {
-  background-color: var(--color2);
-  color: var(--background2);
-  padding: .5rem;
-  width: 120px;
-  text-align: center;
-  border: 1px solid var(--color1);
-  border-radius: 5px;
-}
-
-.curriculoBtn button {
-  background: none;
-  font-size: 1em;
-  font-weight: bold;
-}
-
-.curriculoBtn:hover {
-  background-color: var(--color-btn);
-  color: var(--color2);
-  font-size: 1.2em;
 }
 
 .text {
@@ -441,13 +451,12 @@ header {
 }
 
 .skill-link {
-  font-size: 1em;
+  text-decoration: underline;
   color: currentColor;
 }
 
 .skill-link:hover {
-  font-size: 1em;
-  text-decoration: underline;
+  font-weight: bold;
 }
 
 /* Projetos */
@@ -471,6 +480,7 @@ header {
 
 .projeto img {
   width: 80vw;
+  max-width: 500px;
   border: 2px solid var(--color2);
   border-radius: 10px;
 }
@@ -486,6 +496,7 @@ header {
   display: flex;
   flex-direction: column;
   margin: 2rem 0px;
+  max-width: 500px;
 }
 
 #contato label {
@@ -513,7 +524,6 @@ header {
 
 #enviar:hover {
   background-color: var(--color-btn);
-  font-size: 1.2rem;
 }
 
 /* Footer */
@@ -526,16 +536,5 @@ footer {
 }
 
 footer p {
-  margin-top: 1rem;
   font-size: .7em;
-}
-
-footer .redes {
-  margin: 0px 0px;
-}
-
-footer .redes .rede-icon {
-  margin: 0px 2rem;
-  color: var(--color2);
-  font-size: 2em;
 }
