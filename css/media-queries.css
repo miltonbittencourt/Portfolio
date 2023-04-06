@@ -81,20 +81,25 @@
         width: 20vw;
     }
 
-    /* .skill-content {
+    .skill-content {
         display: grid;
-        grid-template-rows: 25vh 35vh;
+        grid-template-columns: 25vw auto;
     }
 
     #habilidades .h-icon {
-        align-self: end;
+        align-self: center;
+        margin-left: 1rem;
         font-size: 3em;
+        grid-row: 1;
+        grid-column: 2;
     }
 
     .skill-content p {
-        align-self: end;
+        align-self: start;
         margin-left: 0px;
-    } */
+        grid-row: 1;
+        grid-column: 1;
+    }
 
     /* Projetos */
 

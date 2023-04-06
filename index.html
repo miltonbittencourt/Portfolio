@@ -87,7 +87,10 @@
             </div>
         
             <div id="logo">
-                <img id="logo-img" src="images/Logo-880x715.png" alt="Logotipo composta por três tons de azul, contendo cinco colunas com um triangulo acima, remetendo ao formato da letra M" />
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="images/Logo-880x715.png">
+                    <img id="logo-img" src="images/Logo-300x244.png" alt="Logotipo composta por três tons de azul, contendo cinco colunas com um triangulo acima, remetendo ao formato da letra M" />
+                  </picture>
             </div>
             <p id="p-fim">
                 Navegue pelo meu site para saber mais sobre mim e os projetos nos quais tenho trabalhado.
@@ -154,7 +157,12 @@
             <article class="projeto">
                 <h3 class="sub-titulo">Café Serrana</h3>
                 <p>O site da Café Serrana foi projetado para ser uma landing page de produto fictício de café em grãos. Tem um desing responsivo, assim como um HTML semântico e acessível. Foram utlizados apenas HTML5, CSS3 e JavaScript.</p>
-                <a href="https://miltonbittencourt.github.io/cafe-serrana/" target="_blank" rel="noopener noreferrer"><img src="images/CafeSerrana-670x606.png" alt="Projeto de uma página para comercialização de um produto fictício de café em grãos." /></a>
+                <a href="https://miltonbittencourt.github.io/cafe-serrana/" target="_blank" rel="noopener noreferrer">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="images/CafeSerrana-670x606.png">
+                        <img src="images/CafeSerrana-400x362.png" alt="Projeto de uma página para comercialização de um produto fictício de café em grãos." loading="lazy">
+                    </picture>
+                    </a>
             </article>
 
             <!-- Em Breve -->
@@ -162,7 +170,7 @@
             <article class="projeto">
                 <h3 class="sub-titulo">Em breve...</h3>
                 <p>Mais projetos estão a caminho e logo serão adicionados!</p>
-                <a href="#projetos" rel="noopener noreferrer"><img src="images/EmBreve-800x450.png" alt="Em breve" /></a>
+                <a href="#projetos" rel="noopener noreferrer"><img src="images/EmBreve-400x225.png" alt="Em breve" loading="lazy"></a>
             </article>
         </section>
 
