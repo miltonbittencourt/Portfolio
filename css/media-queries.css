@@ -1,13 +1,23 @@
-@media (min-width: 880px) {
+@media (min-width: 768px) {
+    .section {
+        font-size: 20px;
+    }
+}
 
+@media (min-width: 1024px) {
+
+    .section-title {
+        flex: 1 0 100%;
+    }
+    
     /* Inicio */
 
     #inicio {
         text-align: left;
         display: grid;
-        grid-template-rows: auto auto;
+        padding: 1.5rem 2rem;
+        grid-template-rows: 35vh 45vh;
         grid-template-columns: repeat(2, 1fr);
-        font-size: 1.5em;
     }
     
     #inicio #nome {
@@ -28,34 +38,95 @@
         max-width: 500px;        
     }
 
-    .curriculoBtn {
-        display: block;
-        align-self: end;
-        justify-self: center;
-        
-        grid-row: 1;
-        grid-column: 1;
-        width: 200px;
-    }
-    
-    .redes {
+    #p-fim {
         grid-row: 2;
         grid-column: 1;
-        align-self: end;
+        align-self: start;
+        margin-right: 1rem;
     }
     
-    .redes .rede-icon {
+    #inicio .redes {
+        grid-row: 2;
+        grid-column: 1;
+        align-self: center;
+        margin: 0rem 0px;
+    }
+    
+    .rede-icon {
         margin: 0px 2.5rem;
         font-size: 2em;
     }
 
-    .redes .rede-icon:hover {
+    .rede-icon:hover {
         font-size: 2.5em;
     }
 
     /* Sobre */
 
 
+    /* Habilidades */
 
+    #habilidades {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .skill {
+        flex: 0 0 auto;
+        max-width: calc(75%/2);
+    }
+
+    .sub-titulo {
+        width: 20vw;
+    }
+
+    /* .skill-content {
+        display: grid;
+        grid-template-rows: 25vh 35vh;
+    }
+
+    #habilidades .h-icon {
+        align-self: end;
+        font-size: 3em;
+    }
+
+    .skill-content p {
+        align-self: end;
+        margin-left: 0px;
+    } */
+
+    /* Projetos */
+
+    #projetos {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #projetos .text {
+        flex: 1 0 100%;
+    }
+
+    .projeto {
+        flex: 0 0 auto;
+        max-width: calc(80%/2);
+    }
+
+    /* Contato */
+
+    #contato {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contato-info {
+        flex: 0 0 auto;
+        max-width: calc(80%/2);
+        margin: 0rem auto;
+    }
+
+    #contato .redes {
+        margin-top: 10rem;
+    }
 }
   

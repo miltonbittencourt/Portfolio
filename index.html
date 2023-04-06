@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" data-theme="light">
+<html lang="pt-br" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,7 +37,7 @@
 
         let theme = localStorage.getItem('data-theme')
 
-        if (theme == 'dark') changeThemeToDark()
+        if (theme == 'light') changeThemeToLight()
     </script>
 </head>
 <body>
@@ -89,9 +89,9 @@
             <div id="logo">
                 <img id="logo-img" src="images/Logo-880x715.png" alt="Logotipo composta por três tons de azul, contendo cinco colunas com um triangulo acima, remetendo ao formato da letra M" />
             </div>
-            <a class="curriculoBtn" href="docs/Currículo_Milton_Bittencourt.pdf" target="_blank" rel="noopener noreferrer">
-                <button aria-label="Acesse o currículo de Milton Bittencourt">Currículo</button>
-            </a>
+            <p id="p-fim">
+                Navegue pelo meu site para saber mais sobre mim e os projetos nos quais tenho trabalhado.
+            </p>
             <div class="redes">
                 <a href="https://github.com/miltonbittencourt" target="_blank"><i class="fa-brands fa-square-github fa-2xl rede-icon" alt="Ícone do Github"></i></a>
                 <a href="https://www.linkedin.com/in/milton-bittencourt-11b1ba167/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl rede-icon" alt="Ícone do LinkedIn"></i></a>
@@ -104,7 +104,7 @@
             <h2 class="section-title">Sobre Mim</h2>
             <img id="perfil" src="images/perfil.jpg" alt="Foto do rosto de Milton Bittencourt" />
             <p class="text">
-                Sou apaixonado por criar soluções inovadoras e atraentes que proporcionem uma experiência incrível para os usuários. Atualmente, estou aprimorando minhas habilidades em HTML, CSS e JavaScript. Além disso, estou estudando sobre o uso de frameworks e APIs.
+                Tenho sempre como objetivo criar soluções inovadoras e atraentes que proporcionem uma experiência incrível para os usuários. Atualmente, estou aprimorando minhas habilidades em HTML, CSS e JavaScript. Além disso, estou estudando sobre o uso de frameworks e APIs.
             </p>
             <p class="text">
                 Além do desenvolvimento web, sou um entusiasta da tecnologia e estou sempre em busca de aprender novas habilidades e explorar as últimas tendências. Quando não estou codificando, gosto de passar meu tempo livre com meus hobbies favoritos, que são livros, filmes, séries e jogos. Também tenho uma rotina diária de atividades físicas, tanto na academia quanto ao ar livre.
@@ -119,31 +119,30 @@
             <section class="skill">
                 <h3 class="sub-titulo">HTML</h3>
                 <div class="skill-content">
+                    <i class="fa-brands fa-html5 fa-2xl h-icon" alt="Ícone do HTML5"></i>
                     <p>Domínio das tags HTML5, criação de estrutura e semântica de páginas web, uso de elementos de formulário, integração de mídia, navegação, acessibilidade e técnicas de SEO. <a href="docs/Milton-Bittencourt-Curso-HTML5-e-CSS3-Certificado-Curso-em-Video.pdf" class="skill-link" target="_blank" rel="noopener noreferrer">Clique aqui para ver o certificado.</a>
                     </p>
-                    <i class="fa-brands fa-html5 fa-2xl h-icon" alt="Ícone do HTML5"></i>
                 </div>
             </section>
             <section class="skill">
                 <h3 class="sub-titulo">CSS</h3>
                 <div class="skill-content">
-                    <p>Experiência com CSS3, incluindo seletores, pseudo-elementos e pseudo-classes, propriedades de estilo, design responsivo com media queries,  posicionamento (flexbox e grid) e variáveis CSS. <a href="docs/Milton-Bittencourt-Curso-HTML5-e-CSS3-Certificado-Curso-em-Video.pdf" class="skill-link" target="_blank" rel="noopener noreferrer">Clique aqui para ver o certificado.</a></p>
                     <i class="fa-brands fa-css3-alt fa-2xl h-icon" alt="Ícone do CSS3"></i>
+                    <p>Experiência com CSS3, incluindo seletores, pseudo-elementos e pseudo-classes, propriedades de estilo, design responsivo com media queries,  posicionamento (flexbox e grid) e variáveis CSS. <a href="docs/Milton-Bittencourt-Curso-HTML5-e-CSS3-Certificado-Curso-em-Video.pdf" class="skill-link" target="_blank" rel="noopener noreferrer">Clique aqui para ver o certificado.</a></p>
                 </div>
-                
             </section>
             <section class="skill">
                 <h3 class="sub-titulo">JavaScript</h3>
                 <div class="skill-content">
-                    <p>Conhecimento em JavaScript, incluindo sintaxe e estruturas básicas (variáveis, funções, loops, condicionais e eventos), manipulação do DOM e ES6+. <a href="docs/Milton-Bittencourt-Javascript-40-Horas-Certificado-Curso-em-Video.pdf" class="skill-link" target="_blank" rel="noopener noreferrer">Clique aqui para ver o certificado.</a></p>
                     <i class="fa-brands fa-square-js fa-2xl h-icon" alt="Ícone do JavaScript"></i>
+                    <p>Conhecimento em JavaScript, incluindo sintaxe e estruturas básicas (variáveis, funções, loops, condicionais e eventos), manipulação do DOM e ES6+. <a href="docs/Milton-Bittencourt-Javascript-40-Horas-Certificado-Curso-em-Video.pdf" class="skill-link" target="_blank" rel="noopener noreferrer">Clique aqui para ver o certificado.</a></p>
                 </div>
             </section>
             <section class="skill">
                 <h3 class="sub-titulo">Git</h3>
                 <div class="skill-content">
-                    <p>Experiência com o sistema de versionamento Git, incluindo comandos básicos. Entendimento de boas práticas de fluxo de trabalho, como GitFlow e colaboração com outros desenvolvedores usando plataformas como GitHub. <a href="docs/Milton-Bittencourt-Git-e-GitHub-20-Horas-Certificado-Curso-em-Video.pdf" class="skill-link" target="_blank" rel="noopener noreferrer">Clique aqui para ver o certificado.</a></p>
                     <i class="fa-brands fa-git-alt fa-2xl h-icon" alt="Ícone do Git"></i>
+                    <p>Experiência com o sistema de versionamento Git. Entendimento de boas práticas de fluxo de trabalho e colaboração com outros desenvolvedores usando plataformas como GitHub. <a href="docs/Milton-Bittencourt-Git-e-GitHub-20-Horas-Certificado-Curso-em-Video.pdf" class="skill-link" target="_blank" rel="noopener noreferrer">Clique aqui para ver o certificado.</a></p>
                 </div>
             </section>
         </section>
@@ -169,32 +168,32 @@
 
         <section class="section" id="contato">
             <h2 class="section-title">Contato</h2>
-            <p class="text">Caso queira entrar em contato comigo, sinta-se livre para me seguir e enviar uma mensagem em qualquer uma das redes sociais aqui dispostas.</p>
-            <div class="redes">
-                <a href="https://github.com/miltonbittencourt" target="_blank"><i class="fa-brands fa-square-github fa-2xl rede-icon" alt="Ícone do Github"></i></a>
-                <a href="https://www.linkedin.com/in/milton-bittencourt-11b1ba167/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl rede-icon" alt="Ícone do LinkedIn"></i></a>
-                <a href="https://www.instagram.com/bittencourt_milton/" target="blank"><i class="fa-brands fa-instagram fa-2xl rede-icon"  alt="Ícone do Instragram"></i></a>
+            <div class="contato-info">
+                <p class="text">Caso queira entrar em contato comigo, sinta-se livre para me seguir e enviar uma mensagem em qualquer uma das redes sociais aqui dispostas.</p>
+                <div class="redes">
+                    <a href="https://github.com/miltonbittencourt" target="_blank"><i class="fa-brands fa-square-github fa-2xl rede-icon" alt="Ícone do Github"></i></a>
+                    <a href="https://www.linkedin.com/in/milton-bittencourt-11b1ba167/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl rede-icon" alt="Ícone do LinkedIn"></i></a>
+                    <a href="https://www.instagram.com/bittencourt_milton/" target="blank"><i class="fa-brands fa-instagram fa-2xl rede-icon"  alt="Ícone do Instragram"></i></a>
+                </div>
             </div>
-            <p class="text">Além disso, basta preencher o formulário abaixo que receberei sua mensagem em meu e-mail.</p>
-            <div id="formulario">
-                <form action="https://formspree.io/f/xwkjrvnd" method="POST">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
-        
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="_replyto" placeholder="Seu e-mail" required>
-        
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" rows="4" required></textarea>
-        
-                    <input id="enviar" type="submit" value="Enviar">
-                </form>
+            <div class="contato-info">
+                <p class="text">Além disso, basta preencher o formulário abaixo que receberei sua mensagem em meu e-mail.</p>
+                <div id="formulario">
+                    <form action="https://formspree.io/f/xwkjrvnd" method="POST">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="_replyto" placeholder="Seu e-mail" required>
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" rows="4" required></textarea>
+                        <input id="enviar" type="submit" value="Enviar">
+                    </form>
+                </div>
             </div>  
         </section>
     </main>
       
     <footer>
-        
         <p>&copy; 2023 Milton Bittencourt. Todos os direitos reservados.</p>
     </footer>
       
